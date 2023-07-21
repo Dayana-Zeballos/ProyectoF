@@ -1,76 +1,203 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #EFF5F5;
-    color: #181823;
-    margin: 0;
-    padding: 0;
+.P{
+    font-family: 'Poppins', sans-serif;
+}
+.navegador {
+    background-color: #eff5f5;
   }
-  header {
-    background-color: #FC7300;
-    padding: 20px;
-    color: #fff;
-    text-align: center;
-  }
-  nav {
-    background-color: #1F8A70;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-  }
-  nav a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  section {
-    padding: 20px;
-  }
-  footer {
-    background-color: #00425A;
-    color: #fff;
-    padding: 10px;
+  
+  .navegador-header {
+    padding: 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid  #181823;
   }
-  .social-media {
+  
+  .menu-mobil {
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-container {
+    position: absolute;
+    background-color:#1F8A70;
+    width: 100%;
+    height: 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    transition: height 0.2s ease;
+    z-index: 10;
+  }
+  
+  .navbar-link {
+    color: white;
+  }
+  
+  #navegador-header:target .navbar-container {
+    height: 300px;
+  }
+  
+  #navegador-header:target .abrir {
+    display: none;
+  }
+  
+  #navegador-header:target .cerrar {
     display: flex;
   }
-  .social-media a {
-    color: #fff;
-    text-decoration: none;
-    margin-right: 10px;
-  }
+  
+.cerrar {
+    display: none;
+}
 
-  /* Estilos específicos */
-  /* Agregar estilos adicionales según el contenido y necesidades específicas */
-  .form-container {
-    max-width: 500px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #FFF;
-    border: 1px solid #1F8A70;
-  }
-  .form-container input[type="text"],
-  .form-container textarea {
+/* contenedor 1 de quienes somos */
+.contenedor{
+    
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0;
+    text-align: center;
+    justify-content: center;
+    height: auto;
+}
+
+.quienes{
+    text-align: justify;
+    text-align: left;
+  
+}
+
+.p1{
+    text-align: center; 
+    text-align: justify;
+}
+
+.img-fluid {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  .form-container input[type="submit"] {
-    background-color: #1F8A70;
-    color: #FFF;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-  }
+    /* Las imágenes ocupan el 100% del ancho de sus contenedores */
+    height: auto;
+    /* La altura se ajusta proporcionalmente según el ancho para mantener la relación de aspecto original */
+}
 
-  /* Estilos Responsive */
-  @media screen and (max-width: 768px) {
-    nav {
-      flex-direction: column;
-      align-items: center;
-    }
-    .social-media {
-      justify-content: center;
-    }
+.margen{
+    margin-top: 2rem;
+}
+/* seccion de redes */
+.red {
+    width: 100%;
+    list-style-type: none;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-left: 1rem;
+}
+
+.redes {
+    display: flex;
+    /* Convierte los elementos li en contenedores flexibles */
+    align-items: center;
+    /* Centra verticalmente los elementos dentro del li */
+    margin-bottom: 10px;
+    /* Espacio entre cada elemento li */
+    
+}
+
+li img {
+    margin-right: 10px;
+    /* Espacio entre el icono y el texto (ajusta este valor según tu preferencia) */
+}
+
+.row .col-lg-3 {
+    flex-basis: 25%;
+    /* Cada columna ocupa el 25% del ancho de la fila (4 columnas en total) */
+    max-width: 25%;
+    /* Evita que las imágenes se desborden de la columna */
+}
+#boton-escribenos {
+    display: inline;
+    padding: 10px 20px;
+    color: #eff5f5;
+    background-color: #fc7300;
+    font-family: "Belanosima", sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 10px;
   }
+  
+  .contenedor-formulario-de-contacto {
+    width: 100%;
+    background-color: #181823;
+    max-height: 100%;
+  }
+  
+  #titulo-formulario {
+    text-align: center;
+    color: #eff5f5;
+  }
+  
+.formulario-contacto {
+  max-width: 90%;
+  margin: 0 auto;
+  background-color: #eff5f5;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px;
+}
+
+.formulario-contacto input[type="text"],
+.formulario-contacto input[type="email"],
+.formulario-contacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+}
+
+.formulario-contacto input[type="submit"] {
+  background-color: #1f8a70;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+#boton-escribenos:hover {
+    background-color: #fca864;
+  }
+.formulario-contacto input[type="submit"]:hover {
+    background-color: #185f4c;
+}
+.formulario-contacto {
+    max-width: 600px;
+}
+
+.contenedor-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    /* SECCIÓN DE FOOTER */
+footer {
+    
+    /* Las imágenes ocupan el 100% del ancho de sus contenedores */
+    height: auto;
+    display: flex;
+    margin: auto;
+    width: 100%; 
+    padding: 1rem 0;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+

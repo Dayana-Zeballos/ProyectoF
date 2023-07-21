@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="icon" type="image/png" href="./img/logo.jpg">
+  
+    <link rel="stylesheet" href="master.css">
+
+</head>
+<body>
+    <body>
+        <nav class="navegador" id="navegador-header">
+          <header class="navegador-header">
+            <a href="index.html">
+              <img src="./img/logo.jpg" alt="logo UNTREFSCHOOL" class="logo-untrefschool" width="100px"></a>
+          </header>
+        </nav>
+        <main class="contenedor-formulario-de-contacto">
+          <br>
+          <h1 id="titulo-formulario">Formulario de Contacto</h1>
+          <br>
+          <div class="formulario-contacto">
+            <form action="https://formsubmit.co/dayzeballos@gmail.com" method="post" enctype="text/plain">
+    
+              <label for="nombre">Nombre y Apellido</label>
+              <input type="text" id="nombre" name="nombre" required="" placeholder="Escribe tu nombre completo.">
+            
+              <label for="correo">Correo</label>
+              <input type="email" id="correo" name="correo" required="" placeholder="Escribe tu correo electrónico.">
+    
+              <label for="asunto">Asunto</label>
+              <input type="text" id="asunto" name="asunto" required="" maxlength="50" placeholder="Escribe el asunto (Max. 50 caracteres)">
+    
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" required="" placeholder="Escribe tu mensaje (Max. 1000 caracteres)" maxlength="1000"></textarea>
+    
+              <input type="submit" value="ENVIAR">
+            </form>
+          </div>
+          <br>
+        </main>
+        <footer>
+            <div class="footer-formulario">
+                <p>¡GRACIAS POR CONTACTARNOS!</p>
+            </div>
+        </footer>
+      
+    
+    </body>
+</body>
+</html>
